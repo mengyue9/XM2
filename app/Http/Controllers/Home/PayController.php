@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Home;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use A;
-class UserController extends Controller
+class PayController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,8 +24,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //加载添加用户的页面
-        return view("Admin.Admin.add");
+        //
     }
 
     /**
@@ -85,17 +83,11 @@ class UserController extends Controller
         //
     }
 
-    public function a(){
+    public function pays(){
         pay();
     }
 
-    public function b(){
-        $a = new A;
-        $a->sendphone();
+    public function returnurl(){
+        echo "支付成功";
     }
-
-    public function c(){
-        sendphone(18545437269);
-    }
-
 }
